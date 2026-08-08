@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BASECAMP — Adventure Activity Booking</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top">
+      <span class="logo-mark">▲</span>
+      <span>BASECAMP</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#activities">Activities</a>
+      <a href="#how">How it works</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#bookings">My Bookings</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">☾</button>
+      <a href="#book" class="btn btn-accent btn-small">Book now</a>
+      <button class="nav-burger" id="navBurger" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="topo-layer" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow mono">23.02°N · 72.57°E — BOOKING BASE ESTABLISHED</p>
+    <h1 class="hero-title">Plan the climb.<br>We handle the logistics.</h1>
+    <p class="hero-sub">Trekking, rafting, paragliding, and camping expeditions — booked in minutes, guided by locals who know every switchback.</p>
+    <div class="hero-actions">
+      <a href="#activities" class="btn btn-accent">Browse activities</a>
+      <a href="#how" class="btn btn-ghost">How booking works</a>
+    </div>
+    <div class="hero-stats mono">
+      <div><span class="stat-num">6</span><span class="stat-label">activity types</span></div>
+      <div><span class="stat-num">18</span><span class="stat-label">routes mapped</span></div>
+      <div><span class="stat-num">4.8</span><span class="stat-label">avg. rating</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- trail divider -->
+<div class="trail-divider" data-label="TRAILHEAD → ACTIVITIES · 0.0 KM"></div>
+
+<!-- ===== ACTIVITIES ===== -->
+<section class="section" id="activities">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow mono">01 — CHOOSE YOUR ROUTE</p>
+      <h2>Activities open for booking</h2>
+    </div>
+    <div class="filter-row mono" id="filterRow">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="Easy">Easy</button>
+      <button class="chip" data-filter="Moderate">Moderate</button>
+      <button class="chip" data-filter="Hard">Hard</button>
+    </div>
+    <div class="activity-grid" id="activityGrid"></div>
+  </div>
+</section>
+
+<div class="trail-divider" data-label="ACTIVITIES → BOOKING · 4.2 KM"></div>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="section alt" id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow mono">02 — THE ROUTE TO BOOKING</p>
+      <h2>Three checkpoints, no base-camp queues</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <span class="step-alt mono">4,200m</span>
+        <h3>Pick a trail</h3>
+        <p>Compare difficulty, duration and elevation across every listed activity.</p>
+      </div>
+      <div class="step">
+        <span class="step-alt mono">2,600m</span>
+        <h3>Reserve your slot</h3>
+        <p>Fill the booking form with your date and party size — confirmation is instant.</p>
+      </div>
+      <div class="step">
+        <span class="step-alt mono">400m</span>
+        <h3>Show up geared</h3>
+        <p>We send a checklist and meet-up point. You bring the water bottle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trail-divider" data-label="BOOKING → GALLERY · 7.9 KM"></div>
+
+<!-- ===== GALLERY ===== -->
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow mono">03 — FIELD NOTES</p>
+      <h2>From the last dispatch</h2>
+    </div>
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=600&q=60" alt="Mountain trekking group on a ridgeline">
+      <img src="https://images.unsplash.com/photo-1530866495561-507c9faab8f9?w=600&q=60" alt="Whitewater rafting through rapids">
+      <img src="https://images.unsplash.com/photo-1600200352304-2fe64a3d0946?w=600&q=60" alt="Paraglider descending over a valley">
+      <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&q=60" alt="Campsite tents at dusk near mountains">
+      <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?w=600&q=60" alt="Rock climber on a cliff face">
+      <img src="https://images.unsplash.com/photo-1517824806704-9040b037703b?w=600&q=60" alt="Zipline canopy tour in a forest">
+    </div>
+  </div>
+</section>
+
+<div class="trail-divider" data-label="GALLERY → BOOKING FORM · 9.1 KM"></div>
+
+<!-- ===== BOOKING FORM ===== -->
+<section class="section alt" id="book">
+  <div class="wrap book-wrap">
+    <div class="section-head">
+      <p class="eyebrow mono">04 — RESERVE YOUR SLOT</p>
+      <h2>Booking form</h2>
+      <p class="section-sub">Choose an activity above, or pick one directly here. Everything is saved on this device — no account needed for the demo.</p>
+    </div>
+    <form id="bookingForm" class="booking-form">
+      <div class="form-row">
+        <label for="fullName">Full name</label>
+        <input type="text" id="fullName" placeholder="e.g. Aarav Patel" required>
+      </div>
+      <div class="form-row two-col">
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" required>
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" placeholder="+91 98765 43210" required>
+        </div>
+      </div>
+      <div class="form-row two-col">
+        <div>
+          <label for="activitySelect">Activity</label>
+          <select id="activitySelect" required></select>
+        </div>
+        <div>
+          <label for="participants">Participants</label>
+          <input type="number" id="participants" min="1" max="12" value="1" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="bookingDate">Preferred date</label>
+        <input type="date" id="bookingDate" required>
+      </div>
+      <div class="form-row">
+        <label for="notes">Notes <span class="optional">(optional)</span></label>
+        <textarea id="notes" rows="3" placeholder="Dietary needs, gear rental, pickup point..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-accent btn-wide">Confirm booking</button>
+      <p class="form-msg" id="formMsg"></p>
+    </form>
+  </div>
+</section>
+
+<div class="trail-divider" data-label="BOOKINGS LOG · 11.3 KM"></div>
+
+<!-- ===== MY BOOKINGS ===== -->
+<section class="section" id="bookings">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow mono">05 — YOUR LOG</p>
+      <h2>My bookings</h2>
+    </div>
+    <div class="bookings-toolbar">
+      <input type="text" id="bookingSearch" placeholder="Search by name or activity...">
+      <div class="filter-row mono" id="statusFilterRow">
+        <button class="chip active" data-status="all">All</button>
+        <button class="chip" data-status="upcoming">Upcoming</button>
+        <button class="chip" data-status="cancelled">Cancelled</button>
+      </div>
+    </div>
+    <div id="bookingsList" class="bookings-list"></div>
+    <p class="empty-state" id="emptyState">No bookings yet — reserve a slot above and it'll show up here.</p>
+  </div>
+</section>
+
+<div class="trail-divider" data-label="SUMMIT · CONTACT · 14.6 KM"></div>
+
+<!-- ===== CONTACT ===== -->
+<section class="section alt" id="contact">
+  <div class="wrap contact-wrap">
+    <div>
+      <p class="eyebrow mono">06 — GET IN TOUCH</p>
+      <h2>Questions before you book?</h2>
+      <p class="section-sub">Send a message and a trip coordinator will get back to you. This form is for demonstration and stores nothing.</p>
+      <ul class="contact-info mono">
+        <li>base@basecamp-adventures.demo</li>
+        <li>+91 79-2345-6789</li>
+        <li>GEC Bhavnagar, Gujarat, India</li>
+      </ul>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Your email" required>
+      <textarea rows="4" placeholder="Your message" required></textarea>
+      <button type="submit" class="btn btn-ghost btn-wide">Send message</button>
+      <p class="form-msg" id="contactMsg"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <span class="logo-mark">▲</span> BASECAMP
+      <p class="mono footer-note">College demo project — Web Application Development · GEC Bhavnagar</p>
+    </div>
+    <div class="footer-links mono">
+      <a href="#activities">Activities</a>
+      <a href="#book">Book</a>
+      <a href="#bookings">My bookings</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
